@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Sinachi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #191a1e;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: white; /* Fundo branco */
+            color: #191a1e; /* Cor do texto */
+        }
+
+        nav {
+            background-color: #191a1e; /* Fundo escuro do menu */
+            padding: 5px; /* Menor espaçamento */
+            text-align: center;
+            border-radius: 10px; /* Arredondamento do menu */
+            margin: 10px; /* Margem ao redor do menu */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 5px; /* Menor margem entre os itens do menu */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px; /* Ajustado para menor espaço */
+            border-radius: 5px; /* Bordas arredondadas */
+            transition: background-color 0.3s; /* Efeito de transição */
+        }
+
+        nav a:hover {
+            background-color: #ff780a; /* Cor de fundo ao passar o mouse */
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            border: 2px solid #ff780a; /* Borda laranja */
+            border-radius: 10px; /* Bordas arredondadas */
+            background-color: white; /* Fundo branco para as seções */
+        }
+
+        h2 {
+            font-family: 'Optima', sans-serif;
+            border-bottom: 2px solid #ff780a;
+        }
+
+        .portfolio-item {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 200px; /* Largura da imagem */
+            height: auto; /* Mantém a proporção */
+            border-radius: 10px; /* Bordas arredondadas nas imagens */
+            transition: transform 0.3s; /* Efeito de transição */
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #191a1e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #ff780a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #e06e00; /* Cor ao passar o mouse */
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px; /* Espaçamento entre os ícones */
+            color: #191a1e; /* Cor dos ícones */
+            text-decoration: none; /* Sem sublinhado */
+            font-size: 24px; /* Tamanho do ícone */
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./imagens/SVG/Ativo 1.svg" alt="Logo de Alexandre Sinachi" style="max-width: 200px; height: auto;"> <!-- Insira o link da sua imagem -->
+        <p>Produtor Multimídia | Criador de Conteúdo</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um profissional em formação na área de Multimídia, com foco em design gráfico, edição de vídeo e fotografia. Com uma experiência crescente, busco oportunidades para expandir meu repertório e colaborar em projetos inovadores.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos Recentes</h2>
+        <div class="portfolio-item">
+            <a href="https://www.behance.net/gallery/206710457/Gama-Manual-da-Marca">
+                <img src="./imagens/gama.jpg" alt="Logo da Gama Soluções aplicado em branco em uma placa preta">
+            </a>
+            <h3>Gama - Soluções</h3>
+        </div>
+        <div class="portfolio-item">
+            <a href="https://www.behance.net/seu_projeto2">
+                <img src="./imagens/Lendas.png" alt="Post de instagram na identidade visual de Alexandre Sinachi, falando sobre a lenda do futebol: Ronaldo Fenômeno">
+            </a>
+            <h3>Lendas do Esporte</h3>
+        </div>
+        <div class="portfolio-item">
+            <a href="https://www.behance.net/gallery/208310613/Som-da-Villa">
+                <img src="./imagens/davilla.jpg" alt="Logo do Som daVilla aplicado original na placa branca">
+            </a>
+            <h3>Som daVilla - Café e Música</h3>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Se você deseja discutir projetos ou colaborações, entre em contato:</p>
+        <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <p>Ou me siga nas redes:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/seu_perfil/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/seunumerodetelefone" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2024 Alexandre Sinachi. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
