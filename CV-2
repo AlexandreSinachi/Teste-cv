@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Alexandre Sinachi</title>
+  <style>
+    body {
+      font-family: 'Optima', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #191a1e;
+    }
+
+    /* Topo e Menu */
+    .header {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #191a1e;
+      color: #f5f5f5;
+      border-radius: 50px;
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-logo img {
+      max-width: 40px;
+      margin-right: 20px;
+    }
+
+    .navbar-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar-links a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      color: #ff780a;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #191a1e;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .grid-item img {
+      width: 100%;
+      border-bottom: 2px solid #191a1e;
+    }
+
+    .grid-item h3 {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .modal {
+      display: none;
+      /* Oculto por padrão */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+      position: relative;
+      margin: 15% auto;
+      padding: 20px;
+      width: 80%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .description {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #191a1e;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #ff780a;
+      /* Cor de foco */
+    }
+
+    .submit-button {
+      background-color: #ff780a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .submit-button:hover {
+      background-color: #e06b00;
+      /* Cor ao passar o mouse */
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu com Logo -->
+  <div class="header">
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="/imagens/1x/1x/Ativo 4.webp" alt="Logo Alexandre Sinachi">
+      </div>
+      <div class="navbar-links">
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </div>
+  <!-- Sobre Mim -->
+  <section id="sobre" style="padding: 40px; background-color: #f5f5f5;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: justify;">
+      <h2 style="color: #191a1e; text-align: center;">Sobre Mim</h2>
+      <p>
+        Olá! Meu nome é Alexandre Sinachi, designer gráfico com experiência em criação de identidade visual, design de
+        logos e conteúdo estático para redes sociais. Ao longo dos meus projetos, venho desenvolvendo habilidades em
+        UI/UX design e prototipagem com ferramentas como Figma, além de dominar ferramentas do Adobe Creative Suite,
+        como Photoshop, Illustrator, After Effects e Premiere PRO. Acredito que meus trabalhos trazem uma pegada
+        contemporânea, com foco em soluções visuais diretas e eficazes, tanto para pequenos negócios quanto para
+        projetos mais robustos.
+      </p>
+    </div>
+  </section>
+  <!-- Projetos -->
+  <section id="projetos" style="padding: 40px; background-color: #f5f5f5;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <h2 style="color: #191a1e; text-align: center;">Projetos</h2>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+
+        <!-- Projeto 1 -->
+        <div
+          style="flex: 1; min-width: 300px; background-color: #fff; border: 2px solid #ff780a; border-radius: 10px; padding: 20px;">
+          <a href="https://www.behance.net/gallery/206710457/Gama-Manual-da-Marca" target="_blank"
+            style="text-decoration: none; color: #191a1e;">
+            <img src="/imagens/gama.jpg" alt="Faixada da ficticia empresa de consultoria de dados Gama Soluções"
+              style="width: 100%; border-radius: 5px;">
+            <h3 style="text-align: center; margin-top: 10px;">Clique e veja o projeto no Behance</h3>
+            <p style="text-align: center;">Projeto pessoal desenvolvido para trabalhar conceitos de criação e
+              desenvolvimento de identidade visual.</p>
+          </a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div
+          style="flex: 1; min-width: 300px; background-color: #fff; border: 2px solid #ff780a; border-radius: 10px; padding: 20px;">
+          <a href="https://www.behance.net/seuprojeto2" target="_blank" style="text-decoration: none; color: #191a1e;">
+            <img src="/imagens/Lendas.png" alt="Projeto 2" style="width: 100%; border-radius: 5px;">
+            <h3 style="text-align: center; margin-top: 10px;">Clique e Saiba Mais!</h3>
+            <p style="text-align: center;">Postagem para instagram seguindo a minha identidade visual e conta um pouco sobre temas diversos.</p>
+          </a>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div
+          style="flex: 1; min-width: 300px; background-color: #fff; border: 2px solid #ff780a; border-radius: 10px; padding: 20px;">
+          <a href="https://www.behance.net/gallery/208310613/Som-da-Villa" target="_blank"
+            style="text-decoration: none; color: #191a1e;">
+            <img src="/imagens/davilla.jpg" alt="Faixada da ficticia cafeteria Som daVilla"
+              style="width: 100%; border-radius: 5px;">
+            <h3 style="text-align: center; margin-top: 10px;">Clique e veja o projeto no Behance</h3>
+            <p style="text-align: center;">Projeto pessoal desenvolvido para trabalhar conceitos de criação e
+              desenvolvimento de identidade visual.</p>
+          </a>
+        </div>
+
+        <!--Projeto 4-->
+        <div
+          style="flex: 1; min-width: 300px; background-color: #fff; border: 2px solid #ff780a; border-radius: 10px; padding: 20px;">
+          <a href="https://www.behance.net/seuprojeto3" target="_blank" style="text-decoration: none; color: #191a1e;">
+            <img src="/imagens/ney.jpg" alt="Projeto 4" style="width: 100%; border-radius: 5px;">
+            <h3 style="text-align: center; margin-top: 10px;">Clique e Salve o Wallpaper</h3>
+            <p style="text-align: center;">Arte criada usando um conceito minimalista de texturas criadas a
+              partir do Camera Raw do Photoshop tratando tanto a foto do jogador, quanto a arte antes de estar finalizada.</p>
+          </a>
+        </div>
+
+        <!--Projeto 5-->
+        <div
+          style="flex: 1; min-width: 300px; background-color: #fff; border: 2px solid #ff780a; border-radius: 10px; padding: 20px;">
+          <a href="https://www.behance.net/seuprojeto3" target="_blank" style="text-decoration: none; color: #191a1e;">
+            <img src="/imagens/Cerrote.jpg" alt="Projeto 5" style="width: 100%; border-radius: 5px;">
+            <h3 style="text-align: center; margin-top: 10px;">Clique e Salve o Wallpaper</h3>
+            <p style="text-align: center;">Arte criada usando um conceito minimalista de texturas criadas a
+              partir do Camera Raw do Photoshop tratando tanto a foto do jogador, quanto a arte antes de estar finalizada.</p>
+          </a>
+        </div>
+
+        <!--Projeto 6-->
+        <div
+          style="flex: 1; min-width: 300px; background-color: #fff; border: 2px solid #ff780a; border-radius: 10px; padding: 20px;">
+          <a href="https://www.behance.net/seuprojeto3" target="_blank" style="text-decoration: none; color: #191a1e;">
+            <img src="/imagens/belligol.jpg" alt="Projeto 6" style="width: 100%; border-radius: 5px;">
+            <h3 style="text-align: center; margin-top: 10px;">Clique e Salve o Wallpaper</h3>
+            <p style="text-align: center;">Arte criada usando um conceito minimalista de texturas criadas a
+              partir do Camera Raw do Photoshop tratando tanto a foto do jogador, quanto a arte antes de estar finalizada.</p>
+          </a>
+        </div>
+
+      </div>
+      <!-- Formulário -->
+      <div class="form-container">
+        <h2>Contato</h2>
+        <form action="mailto:seuemail@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <input type="submit" value="Enviar" class="submit-button">
+        </form>
+      </div>
+
+    </div>
+
+    </div>
+    <footer>
+      &copy; 2024 Alexandre Sinachi. Todos os direitos reservados.
+    </footer>
+  </section>
